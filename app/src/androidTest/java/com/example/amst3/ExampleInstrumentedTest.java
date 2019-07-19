@@ -1,4 +1,4 @@
-package com.example.trabajoautonomo5;
+package com.example.amst3;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.trabajoautonomo5", appContext.getPackageName());
+        assertEquals("com.example.amst3", appContext.getPackageName());
     }
 }

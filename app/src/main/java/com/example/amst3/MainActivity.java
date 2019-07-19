@@ -1,4 +1,4 @@
-package com.example.trabajoautonomo5;
+package com.example.amst3;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
