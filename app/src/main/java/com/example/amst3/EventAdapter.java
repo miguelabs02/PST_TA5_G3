@@ -12,7 +12,12 @@ import java.util.ArrayList;
 public class EventAdapter extends BaseAdapter {
     private ArrayList<Event> listEvents;
     private Context context;
+    /**
 
+     *La clase event adapter tiene como parametro una lista de eventos *que se pueden desplegar el mismo dia, así mismo como un *contexto. *Esta clase extiende de BaseAdapter, el cual tiene
+     *metodos *abstractos que debemos sobreescribir.
+
+     **/
     public EventAdapter(ArrayList<Event> listEvents, Context context) {
         this.listEvents = listEvents;
         this.context = context;
@@ -32,7 +37,13 @@ public class EventAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return 0;
     }
+    /**
 
+     *getView nos permite colocar de manera visible el evento que nos *encontramos en la ListView, y así asignar la hora, el tiempo de *requisición, la descripción y el lugar
+
+     *El metodo retorna una vista.
+
+     **/
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Event item = (Event) getItem(position);

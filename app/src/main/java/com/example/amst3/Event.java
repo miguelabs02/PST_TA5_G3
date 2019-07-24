@@ -1,5 +1,11 @@
 package com.example.amst3;
 
+/**
+
+ *El objeto evento sirve para crear una tarea dentro del calendario,
+ * este tiene parametros de hora, tiempo de requisición, descripcion y lugar.
+
+ **/
 public class Event {
     private String hour;
     private String timeRequired;

@@ -24,6 +24,14 @@ public class calendarActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
         adapter = new EventAdapter(listEvents,this);
         listView.setAdapter(adapter);
+        /**
+
+         *El metodo nos permite realizar una acción
+         * cada que seleccionemos una fecha.
+         * Si la fecha seleccionada es el 23 de Julio de 2019,
+         * se creara un evento en el ListView.
+
+         **/
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month, int dayOfMonth) {
@@ -42,7 +50,11 @@ public class calendarActivity extends AppCompatActivity {
         });
 
     }
+    /**
 
+     *Actualiza el ListView para mostrar la tarea creada.
+
+     **/
         private void updateItems(){
             listEvents.add(new Event("22:00", "1h00", "Entrega de deber de PST", "ESPOL"));
         }
